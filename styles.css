@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Norwester';
+  src: url('fonts/norwester.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#head{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #005396;
+}
+
+p{
+    padding-left: 20px;
+}
+
+.main-headers{
+    font-size: 110%;
+    font-family: 'Norwester', sans-serif;
+    text-align: center;
+}
+
+#main-header-subline{
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.wrapped {
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  animation: slideshow 28s linear infinite;
+  width: max-content;
+}
+
+.box {
+  display: flex;
+}
+
+.reviewbox {
+  flex: 0 0 auto;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #e8f1f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Loop smoothly: move by 50% since we duplicated .box */
+@keyframes slideshow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.wrapped:hover .carousel {
+  animation-play-state: paused;
+}
+
+
+.contact{
+    color: #005396;
+    text-decoration: underline;
+}
+
+.contactb{
+    color: #005396;
+    text-decoration: none;
+}
+
+
+
+.contact-buttons{
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    border-color: #e8f1f9;
+    background-color: #e8f1f9;
+    color:#005396;
+    box-shadow: rgba(0, 0, 0, 0.102) 0px 3px 3px, hsla(0, 0%, 0%, 0.083) 0px 3px 3px;
+    border-radius: 20px;
+    border: none;
+}
+
+#contactoptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#booking{
+    width: 350px;
+}
+
+
+
+
+footer{
+    display: flex;
+    font-family: 'Norwester', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0px;
+    width: 100%;
+    padding-top: 30px;
+    color: #e8f1f9;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    background-color: #005396;
+}
+
+.headers{
+    font-family: 'Norwester', sans-serif;
+    text-align: left;
+    margin: 10px;
+    color: #005396;
+}
+
+.carousel-widget {
+  width: 100%;
+  background-color: #e8f1f9;
+  display: flex;
+  padding-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   
+ position: relative; /* Add this */
+  
+}
+
+.carousel-track {
+  padding-left: 30px;
+  height: 500px;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-img {
+  flex: 0 0 100%;           
+  max-width: 80%;
+  margin: 0 15px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.102) 0 3px 3px,
+              hsla(0, 0%, 0%, 0.083) 0 3px 3px;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; 
+  font-size: 1.8rem;
+  color: #005396;
+  background: #e8f1f9;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+[data-prev] {
+  left: 10px;
+}
+
+[data-next] {
+  right: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-img {
+        flex: 0 0 33.3333%;
+
+    }
+
+    p, #main-header-subline, li, .overflow {
+        font-size: larger;
+        }
+
+    h2{
+        font-size: 200%;
+    }
+
+    
+}
+
