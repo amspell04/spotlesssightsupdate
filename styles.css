@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+h2{
+  margin: 10px;
+}
+
 body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
