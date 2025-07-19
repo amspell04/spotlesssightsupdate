@@ -13,6 +13,7 @@
 
 h2{
   margin: 10px;
+  padding-top: 30px;
 }
 
 body{
@@ -23,6 +24,10 @@ body{
     flex-direction: column;
     text-align: left;
     color: #005396;
+}
+
+li{
+  padding: 10px;
 }
 
 p{

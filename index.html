@@ -16,7 +16,7 @@
 
 <body>
 
-<img id="head" src="imgs/header-mobile.png" alt="header image for spotless sights">
+<img id="head" src="imgs/header-mobile.jpg" alt="header image for spotless sights">
 
 
 
@@ -135,7 +135,7 @@
   function updateImage() {
     const img = document.getElementById('head');
     const isMobile = window.innerWidth <= 768; 
-    img.src = isMobile ? 'imgs/header-mobile.png' : 'imgs/header.png';
+    img.src = isMobile ? 'imgs/header-mobile.jpg' : 'imgs/header.jpg';
   }
 
   window.addEventListener('load', updateImage);
